@@ -1,0 +1,20 @@
+<div class="content"> 
+  <app-header
+    [currentMenu]="currentPage.name"
+    [selectedCount]="selectedValues.length"
+    [totalValue]="totalValue">
+  </app-header>
+
+  <app-sidebar 
+    (pageSelected)="onPageSelected($event)">
+  </app-sidebar>
+
+  <div class="inputs">
+    <label *ngFor="let item of items">
+      <input type="checkbox" (change)="onToggle(item.value, $event)" />
+      {{ item.label }} <div class="price">
+        {{ item.value }}₽
+      </div>
+    </label>
+  </div>
+</div>

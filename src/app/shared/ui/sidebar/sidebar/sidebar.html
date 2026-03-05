@@ -1,0 +1,12 @@
+<div class="sidebar">
+  <div class="buttons">
+    <button
+      *ngFor="let page of pages; let i = index"
+      type="button"
+      (click)="selectPage(i)">
+      {{ page.name }}
+    </button>
+    
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+.inputs{
+    margin-left:23%;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.price{
+    display:inline;
+    color:gray;
+}
+.content{
+    background:#e1e3e5;
+    height:100%;
+
+}
